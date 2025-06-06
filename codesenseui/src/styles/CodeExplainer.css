@@ -1,0 +1,100 @@
+/* OUTER full screen background wrapper */
+.code-explainer-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Background same as dashboard/app */
+  background: linear-gradient(135deg, #000000, #000000, #0e152d, #045e64, #1e90ff);
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 45% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* INNER content box */
+.code-explainer-container {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent box */
+  backdrop-filter: blur(10px);
+  border: 1px solid #00ffff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  max-width: 800px;
+  width: 90%;
+  font-family: 'Poppins', Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.header-box {
+  margin-bottom: 30px;
+}
+
+.main-heading {
+  font-size: 32px;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  font-size: 18px;
+  color: #cccccc;
+}
+
+.code-textarea {
+  width: 100%;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.explain-button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #00ffff;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explain-button:disabled {
+  cursor: not-allowed;
+  background-color: #6c757d;
+}
+
+.text-buttons-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.text-button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid #00ffff;
+  background-color: transparent;
+  color: #00ffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.text-button:hover {
+  background-color: #00ffff;
+  color: #000000;
+}

@@ -1,0 +1,62 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  
+  /* Transparent + glass effect */
+  backdrop-filter: blur(10px);
+  background: linear-gradient(135deg, #000000, #000000, #000935, #000000, #080808);
+  color: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-content ul li {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+/* Style the button inside the link */
+.sidebar-content ul li a button.sidebar-btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+/* Hover effect */
+.sidebar-content ul li a button.sidebar-btn:hover {
+  background: rgba(0, 180, 255, 0.3);
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  box-shadow: 0 0 10px #00ffff66;
+}
