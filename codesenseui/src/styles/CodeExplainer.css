@@ -19,6 +19,16 @@
   100% { background-position: 0% 50%; }
 }
 
+.progress-message {
+  margin-top: 12px;
+  color: #00ff7f;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: monospace;
+  text-align: center;
+}
+
+
 /* INNER content box */
 .code-explainer-container {
   background-color: rgba(0, 0, 0, 0.6); /* semi-transparent box */
