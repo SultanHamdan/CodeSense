@@ -1,4 +1,4 @@
-.result-page-container {
+.result-result-page-container {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -6,19 +6,19 @@
   min-height: 100vh;
   background: linear-gradient(135deg, #000000, #000000, #121625, #000000, #000000);
   background-size: 200% 200%;
-  animation: gradientMove 10s ease infinite;
+  animation: result-gradientMove 10s ease infinite;
 }
 
-@keyframes gradientMove {
+@keyframes result-gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 45% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-.card {
+.result-card {
   flex: 1;
   margin: 1rem;
-  padding: 1.5rem;
+  padding: 0.4rem;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 12px;
@@ -30,32 +30,30 @@
   overflow-y: auto;
 }
 
-.left-card h2,
-.right-card h2 {
+.result-left-card h2,
+.result-right-card h2 {
   margin-bottom: 1rem;
   color: #00ffff;
   font-size: 1.5rem;
 }
 
-.code-display,
-.explanation-display {
+.result-code-display,
+.result-explanation-display {
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: 14px;
   line-height: 1.5;
   padding-top: 0.5rem;
 }
-.output-heading {
+
+.result-output-heading {
   margin-bottom: 0.5rem;
   color: #00ff7f; /* light green */
   font-size: 1.2rem;
 }
-.explanation-header {
+
+.result-explanation-header {
   margin-bottom: 0.5rem;
   color: #00ffff;
   font-size: 1.5rem;
 }
-
-
-
-

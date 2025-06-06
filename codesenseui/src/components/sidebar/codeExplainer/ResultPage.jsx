@@ -7,17 +7,16 @@ const ResultPage = () => {
   const { code, explanation } = location.state || { code: '', explanation: '' };
 
   return (
-    <div className="result-page-container">
-      <div className="card left-card">
+    <div className="result-result-page-container">
+      <div className="result-card result-left-card">
         <h2>Pasted Code</h2>
-        <pre className="code-display">{code}</pre>
+        <pre className="result-code-display">{code}</pre>
       </div>
 
-      <div className="card right-card">
-        <h2 className="explanation-header">Explanation</h2> {/* Always show this */}
-        <h4 className="output-heading">(Output)</h4> {/* Always show this */}
-        <pre className="explanation-display">
-          {explanation ? explanation : 'No output yet.'} {/* Default fallback */}
+      <div className="result-card result-right-card">
+        <h2 className="result-explanation-header">Explanation</h2>
+        <pre className="result-explanation-display">
+          {explanation ? explanation : 'No output yet.'}
         </pre>
       </div>
     </div>
