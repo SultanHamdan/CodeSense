@@ -9,13 +9,18 @@ function Sidebar({ isOpen, onClose }) {
       <div className="sidebar-content">
         <ul>
           <li>
+            <Link to="/profile" onClick={onClose}>
+              <button className="sidebar-btn">Get Started</button>
+            </Link>
+          </li>
+          <li>
             <Link to="/codeexplainer" onClick={onClose}>
               <button className="sidebar-btn">CodeExplainer</button>
             </Link>
           </li>
           <li>
             <Link to="/profile" onClick={onClose}>
-              <button className="sidebar-btn">Profile</button>
+              <button className="sidebar-btn">TextExplainer</button>
             </Link>
           </li>
           <li>
